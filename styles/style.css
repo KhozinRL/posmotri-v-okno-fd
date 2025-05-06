@@ -4,22 +4,18 @@
   box-sizing: border-box;
 }
 
-html {
-  block-size: 100%;
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  inline-size: 1200px;
+html {
   block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
 }
 
 h1,
@@ -39,6 +35,20 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
 }
 
 /* Кастомный скроллбар */
@@ -261,4 +271,32 @@ ol {
 
   width: 194px;
   height: 34px;
+}
+
+.button {
+  height: 34px;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #fff;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 1px;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
 }
