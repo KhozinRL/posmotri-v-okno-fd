@@ -193,7 +193,6 @@ ol {
 
 .more-button {
   width: 100%;
-  min-height: 34px;
 
   margin-top: 30px;
 }
@@ -291,7 +290,6 @@ ol {
   align-self: end;
 
   min-width: 194px;
-  min-height: 34px;
 }
 
 .button {
@@ -301,6 +299,8 @@ ol {
   font-size: inherit;
   font-family: inherit;
   font-weight: 700;
+
+  min-height: 34px;
 }
 
 .button:hover {
