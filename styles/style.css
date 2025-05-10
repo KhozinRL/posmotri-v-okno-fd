@@ -68,7 +68,7 @@ ol {
   font-family: Oswald, Arial, sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 90%;
+  line-height: 93.3%;
   text-transform: uppercase;
 }
 
@@ -111,7 +111,7 @@ ol {
   width: 399px;
   overflow-y: auto;
 
-  margin-top: 26px;
+  margin-top: 23px;
   padding: 3px;
 }
 
@@ -252,9 +252,9 @@ ol {
   font-family: inherit;
   color: #fff;
 
-  border-width: 1px 0;
-  border-style: solid;
-  border-color: white;
+  border: 1px solid white;
+  border-left-color: transparent;
+  border-right-color: transparent;
 }
 
 .search-form__textfield:focus,
